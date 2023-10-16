@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Borel&family=Cairo&family=Montserrat:wght@300&family=Roboto+Mono:wght@300&family=Roboto:ital@0;1&family=Rubik&display=swap" rel="stylesheet">
+    <link
+      href="./music.css"
+      rel="stylesheet"
+    />
+    <title>Music Player</title>
+  </head>
+  <body>
+    <div class="Music-wrapper">
+      <div class="image-wrapper">
+        <image class="image"></image>
+      </div>
+      <h4 class="song-title"></h4>
+      <h5 class="song-artist"></h5>
+      <div class="duration-container">
+        <div class="current-time">00:00</div>
+        <div class="timeline-container">
+          <audio class="audio" src=""></audio>
+          <div class="timeline">
+            <!-- <div class="thumb-indicator"></div> -->
+          </div>
+        </div>
+        <div class="total-time">00:00</div>
+      </div>
+      <div class="button-container">
+        <button class="shuffle-btn" title="Shuffle">
+          <span class="material-icons">shuffle</span>
+        </button>
+        <button class="prev-btn" title="Prev">
+          <span class="material-icons">skip_previous</span>
+        </button>
+        <button class="play-pause-btn" title="Play">
+          <span id="play-pause" class="material-icons ">play_circle</span>
+          
+        </button>
+        <button class="next-btn" title="Next">
+          <span class="material-icons">skip_next</span>
+        </button>
+        <button class="replay-btn" title="Replay">
+          <span class="material-icons">replay</span>
+        </button>
+      </div>
+    
+    </div>
+  </body>
+  <script src="music.js"></script>
+</html>
